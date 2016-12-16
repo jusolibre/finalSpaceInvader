@@ -221,7 +221,7 @@ function moveMonsters() {
 		nb = (calcHight() * mod);
 		if (nb == 3 * mod) {
 			document.getElementById('win').style.display = "block";
-			document.getElementById('win2').innerHTML += "Vous avez marquer " + score + " points";
+			document.getElementById('win2').innerHTML += "Vous avez marqué " + score + " points";
 			document.getElementById('container').style.display = "none";
 			createSon("gagné.wav");
 			win = 1;
@@ -229,7 +229,7 @@ function moveMonsters() {
 			setTimeout(moveMonsters, 200);
 		} else {
 			document.getElementById('gameover').style.display = "block";
-			document.getElementById('gameover2').innerHTML += "Vous avez marquer " + score + " points";
+			document.getElementById('gameover2').innerHTML += "Vous avez marqué " + score + " points";
 			document.getElementById('container').style.display = "none";
 			document.getElementById('score').innerHTML = "Score : " + score;
 			createSon("perdu.wav");
