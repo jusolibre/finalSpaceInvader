@@ -1,0 +1,82 @@
+.container
+{
+	background-image: url(./img/debut.jpg);
+	/* background-size: 100% 100%; */
+	/* background-repeat: no-repeat; */
+	/* width:100%; */
+	overflow : hidden;
+	/* height: 100%; */
+}	
+
+#button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #FFE000;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 200%;
+  padding: 1%;
+  width: 20%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-right: 1%;
+  font-family: 'Nova Square', cursive;
+}
+#button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20%;
+  transition: 0.5s;
+}
+#button:hover span {
+  padding-right: 25%;
+}
+#button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*************************************************/
+#acceuil
+{
+	margin-left:45%;
+	margin-top:15%;
+}
+input
+{
+	border-radius: 4px;
+	font-size:25px;
+	height: 5%;
+	font-family: 'Nova Square', cursive;
+	font-weight: bold;
+}
+img
+{
+	max-width:100%;
+	height:auto;
+}
+label
+{
+	border-radius: 4px;
+	font-size: 500%;
+	height: 15%;
+	margin-right: 10%;
+	margin-top:15%;
+	color: #FFE000;
+	text-shadow: 2px 2px 2px #000000;
+	font-family: 'Nova Square', cursive;
+}
+footer{
+	margin-top:15%;
+	color: #FFE000;
+	text-align: center;
+	font-family: 'Nova Square', cursive;
+}

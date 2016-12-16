@@ -1,0 +1,166 @@
+/******************class container****************/
+
+#background {
+	background-image: url(./img/space.jpg);
+}
+
+
+/*******************div score*********************/
+
+.score {
+	background-color: none;
+	width: 10%;
+	height: 5%;
+}
+
+
+/**********************h2*************************/
+
+h2 {
+	color: #87CEFA;
+	font-family: 'Nova Square', cursive;
+	text-shadow: 2px 2px 2px #00C0B0;
+}
+
+
+/***********************h1************************/
+
+h1 {
+	color: #87CEFA;
+	text-shadow: 2px 2px 2px #00C0B0;
+	text-align: left;
+	width: 50%;
+	display: block;
+	margin-left: 40%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	font-family: 'Nova Square', cursive;
+	font-size: 45px;
+}
+
+
+/*********************ennemis**********************/
+
+#ennemis {
+	background-color: none;
+	width: 60%;
+	height: 25%;
+	height: 30%;
+	margin-top: 3%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+/*******************cowboy*********************/
+
+#cowboy {
+	width: 10%;
+	height: 10%;
+	top: 86%;
+	margin-left: 45%;
+	margin-right: auto;
+	position: absolute;
+}
+
+
+/*******************vaisseau*********************/
+
+.vaisseau {
+	height: 3%;
+	width: 7%;
+	display: inline-block;
+	margin-bottom: 3%;
+	margin-left: 2%;
+	height: 20%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*********************************************************************************/
+
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #87CEFA;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+	width: 100px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	font-family: 'Nova Square', cursive;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.missile {
+	border: 1px solid black;
+	width: 5px;
+	height: 10px;
+	position: absolute;
+	display: none;
+	background-color: red;
+}
+
+#gameover {
+	overflow : hidden;
+	position: absolute;
+	display: none;
+	height: 59%;
+	color: #FFFFFF;
+	padding-top: 20%;
+	font-family: 'Nova Square', cursive;
+	background-color: rgba(0, 0, 0, 0.65);
+	width: 100%;
+}
+
+#gameover h2 {
+	margin-left: 40%;
+}
+
+#win {
+	overflow : hidden;
+	position: absolute;
+	display: none;
+	height: 59%;
+	color: #FFFFFF;
+	padding-top: 20%;
+	font-family: 'Nova Square', cursive;
+	background-color: rgba(0, 0, 0, 0.65);
+	width: 100%;
+}
+
+#win h2 {
+	margin-left: 40%;
+}

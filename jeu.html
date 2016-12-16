@@ -1,0 +1,95 @@
+<html>
+
+<head>
+	<title>Space Invader</title>
+	<meta charset="utf-8">
+	<link href='css/jeu.css' rel='stylesheet' type='text/css'>
+	<link href='css/pause.css' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+	<!-- police de google font-->
+</head>
+
+<body id="background">
+	<!-------------------------------- intégrer une musique-------------------------->
+	<audio preload="auto" autoplay="autoplay" id="audio">
+		<source src="Lasoupe.mp3" type="audio/mp3" autostart="true"/>
+	</audio>
+	<!------------------------------------------------------------------------------->
+	<!--------- insérerr le score----------------->
+
+	<div id="container">
+		<div>
+			<h2 id="score">Score : </h2>
+		</div>
+		<div>
+			<button class="button" style="vertical-align:middle" onclick="self.location.href='jeu.html'"><span>Rejouer</span></button>
+			<button class="button" style="vertical-align:middle" onclick="self.location.href='index.html'"><span>Retour</span></button>
+			<button class="button" style="vertical-align:middle" onclick="pauseFunction()"><span>Pause</span></button>
+		</div>
+		<!-------------------------------------------->
+		<h1><img src="./css/img/titre.jpg"/></h1>
+
+		<!----------------------------div des aliens------------------------->
+		<div id="ennemis">
+			<div class="vaisseau"><img src="./css/img/alien1.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien2.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien3.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien4.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien5.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien1.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien2.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien3.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien4.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien5.png" /></div>
+
+			<div class="vaisseau"><img src="./css/img/alien5.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien3.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien4.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien2.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien1.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien5.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien3.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien4.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien2.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien1.png" /></div>
+
+			<div class="vaisseau"><img src="./css/img/alien1.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien2.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien3.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien4.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien5.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien1.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien2.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien3.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien4.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alien5.png" /></div>
+		</div>
+		<!------------------------------------------------------------------->
+		<!-------------------Vaisseau gentil---------------------->
+		<div id="cowboy">
+			<img src="./css/img/rocket3.png" />
+		</div>
+		<!-------------------------------------------------------->
+	</div>
+
+	<div id="gameover">
+		<button class="recommencer" style="vertical-align:middle" onclick="self.location.href='jeu.html'"><span>Recommancer</span></button>
+		<h2 id="gameover2">Vous avez perdu<br/></h2>
+	</div>
+	<div id="win">
+		<button class="recommencer" style="vertical-align:middle" onclick="self.location.href='jeu.html'"><span>Recommencer</span></button>
+		<h2 id="win2">Vous avez Gagné<br/></h2>
+	</div>
+	<div id="pause">
+		<div id="acceuil">
+			<p>
+				<label for="pause">PAUSE</label>
+			</p>
+			<button id="button" style="vertical-align:middle" onclick="pauseFunction()"><span>Reprendre</span></button>
+		</div>
+	</div>
+
+	<script src="js/jeu.js"></script>
+</body>
+
+</html>
