@@ -205,7 +205,7 @@ function calcHight() {
 		tmp = (i >= 0) ? spaceShip[i].childNodes[0] : null;
 		j++;
 	}
-	ret = Math.trunc((j) / 10);
+	ret = Math.floor((j) / 10);
 	return (ret)
 }
 
