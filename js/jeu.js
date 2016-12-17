@@ -43,7 +43,7 @@ function createSon(chemin)
 {
 	var player = new Audio();
 	player.src = chemin;
-	player.play();
+	/*player.play();*/
 }
 
 function fireFrei() {
