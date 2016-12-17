@@ -8,7 +8,7 @@
 /*******************div score*********************/
 
 .score {
-	background-color: none;
+	background-color: rgba(0, 0, 0, 0);
 	width: 10%;
 	height: 5%;
 }
@@ -42,7 +42,7 @@ h1 {
 /*********************ennemis**********************/
 
 #ennemis {
-	background-color: none;
+	background-color: rgba(0, 0, 0, 0);
 	width: 60%;
 	height: 25%;
 	height: 30%;
